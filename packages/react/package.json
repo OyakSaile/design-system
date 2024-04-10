@@ -7,7 +7,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
@@ -15,11 +15,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@oyaksaile/eslint-config": "*",
     "@oyaksaile/tokens": "*",
     "@oyaksaile/ts-config": "*",
-    "@oyaksaile/eslint-config": "*",
-    "typescript": "^5.4.4",
-    "tsup": "^8.0.2"
-  },
-  "dependencies": {}
+    "@types/react": "^18.2.75",
+    "@types/react-dom": "^18.2.24",
+    "react": "^18.2.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4"
+  }
 }
