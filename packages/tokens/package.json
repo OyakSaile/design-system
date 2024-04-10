@@ -1,0 +1,23 @@
+{
+  "name": "@oyaksaile/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "@oyaksaile/ts-config": "*",
+    "@oyaksaile/eslint-config": "*",
+    "typescript": "^5.4.4"
+  }
+}
